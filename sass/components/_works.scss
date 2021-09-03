@@ -1,0 +1,54 @@
+/* OUR WORKS */
+.section--no-padding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section--no-padding-top {
+  padding: 0;
+}
+.works {
+  display: flex;
+}
+.section__title {
+  margin-bottom: 50px;
+  color: $title-secondary-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.works__position {
+  position: relative;
+}
+.works__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-secondary-color;
+}
+.works__img,
+.team__img,
+.pictures__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.works__item:not(:last-child) {
+  margin-right: 30px;
+}

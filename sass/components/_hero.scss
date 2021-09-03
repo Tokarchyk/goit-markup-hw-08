@@ -1,0 +1,119 @@
+/* hero image */
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: $bg-secondary-color;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/bg-mob.webp"), url("../images/hero/bg-mob.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  font-style: $secondary-font;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+  max-width: 360px;
+  color: $white-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+
+  letter-spacing: 0.06em;
+}
+
+.hero__button {
+  color: $white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  border: 1px solid $accent-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $contacts-hover-color;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 320px),
+  (min-resolution: 192dpi) and (min-width: 320px),
+  (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-mob@2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-tabl.jpg");
+  }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 480px),
+  (min-resolution: 192dpi) and (min-width: 480px),
+  (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-tabl@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-deskt.jpg");
+  }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-deskt@2x.jpg");
+  }
+}
